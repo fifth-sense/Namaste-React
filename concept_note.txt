@@ -1,20 +1,26 @@
-/**
- * create below type structure using react
- * <div id="parent">
- *      <div id="child">
- *          <h1></h1>
- *     </div>
- *  </div>
- */
+Ep - 1
+CDN: 
+React CDN
+ReactDOM
+React.createElement
+React.createRoot
+React element
+root.render
 
-const parent = React.createElement("div", {id: "parent"}, 
-   React.createElement("div", {id: "child"},
-    React.createElement("h1", {id: "heading"}, "I am H1 tag!" ))
-);
-const heading = React.createElement("h1", {
-    id: "heading"
-}, "Hello from React!!");
+Ep-2
+initialize git repo - Namate React, pushed to repo
+create a production ready app by scratch , have your own create-react-app, because if we use create-react-app it already ignited the app 
+production ready.. but if we do it from scratch we have to do it one by one using below steps.
 
+ * NPM - it is not stand for node Package manager :), it manages the packages only but does not stands for node package manager
+         it a bundle of all the packages, libraries, utilities, it manages everything
+         How to add npm in your app (namste React app)
+         ** npm init
+            it will ask some question answer it 
+            name, description, entry point, version, test command, git repository, 
+
+
+1, 2 video
 //suppose i want to have another h2 tag inside child div as children 
 // in that case we can pass array of children 
 const parent2 = React.createElement("div", {id: "parent"}, 
@@ -35,9 +41,8 @@ const parent3 = React.createElement("div", {id: "parent"}, [
     React.createElement("h2", {}, "i am h2 tag!!")]
     )]);
 
-
-
 console.log(heading); // react element - it is a js object
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(parent3); 
 //what if we have  h1 tag in index.html in that case what will it do==> it will replaced h1 tag and render root
+            

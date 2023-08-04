@@ -9,11 +9,13 @@
 </head>
 <body>
     <!-- <h1>Hello from HTML!</h1> -->
-    <h1>Hello from before Root</h1>
+    <!-- <h1>Hello from before Root</h1> -->
     <div id="root">
-        <h1>Ruby is here</h1> <!-- this h1 get replaced by react parent element because we have created are react root element using this div id="root"-->
-    </div> <!--- root.render(parent) will replace the id="root" only not the above and h1 and below h1 tags -->
-    <h1>Hello from after Root</h1>
+        <h1>Ruby is here</h1> 
+        <!-- this h1 get replaced by react parent element because we have created are react root element using this div id="root"-->
+    </div> 
+    <!--- root.render(parent) will replace the id="root" only not the above and h1 and below h1 tags -->
+    <!-- <h1>Not Rendered</h1> -->
     <!-- <script>
         const heading = document.createElement('h1');
         heading.innerHTML = "hello from javascript";
@@ -21,9 +23,7 @@
         root.appendChild(heading);
     </script> -->
     <!-- order is important  you can add  <script src="./App.js"> before importing cdn link of react it will show error like React is not defined-->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="./App.js">
+    <script type="module" src="./src/App.js">
     </script>
     
 </body>

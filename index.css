@@ -1,3 +1,91 @@
-#heading {
-    color: red
+.header{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-container{
+
+}
+.logo{
+    width: 150px;
+}
+
+.nav-items > ul{
+    display: flex;
+    padding: 10px;
+    font-size: 14px;
+   
+}
+.nav-items > ul > li {
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+  
+}
+.search {
+    margin: 10px;
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.res-card{
+    width: 280px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #fff;
+}
+.res-card:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.res-img{
+   width: 92%;
+   transform: rotate(90);
+   padding: 12px;
+}
+.top-res{
+    margin: 10px;
+    padding: 8px;
+    background-color:crimson;
+    color: #fff;
+}
+.res-food-name{
+    font-size: 17px;
+    word-break: break-all;
+    font-weight: bold;
+    font-family:"Proxima Nova"
+}
+.res_card_container{
+    padding: 12px;
+}
+.res-data{
+    display: flex;
+    margin-top: 16px;
+    justify-content: space-between;
+
+}
+.res-cuisines{
+    color: #686b78;
+    margin-top: 4px;
+    font-size: 13px;
+
+}
+.rating{
+    background-color: #48c479;
+    color: #fff;
+    height: fit-content;
+    padding: 5px;
+    font-size: 12px;
+}
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card{
+    height: 400px;
+    width: 280px;
+    margin: 10px;
+    background-color: #f0f0f0;
 }
