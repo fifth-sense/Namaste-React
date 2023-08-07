@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import RestrauntContainer from "./RestrauntContainer";
 import { FOOD_URL } from "../utils/constants";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const [listOfRestraunts, setLisOfRestraunts] = useState([]);
@@ -14,7 +15,6 @@ const Body = () => {
   const fetchApiData = async () => {
     const data = await fetch(FOOD_URL);
     const json = await data.json();
-    console.log("json===", json)
     const restraurantList =
       json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants;
@@ -55,8 +55,10 @@ const Body = () => {
       </div>
 
       <div className="res-container">
-        {listOfFilteredRestraunts.map((food) => (
-          <RestrauntContainer key={food?.info?.id} foodList={food} />
+        {listOfFilteredRestraunts?.map((food) => (
+            <Link to={"/restaurants/"+food?.info?.id} key={food?.info?.id}>
+          <RestrauntContainer  foodList={food} />
+          </Link>
         ))}
       </div>
     </div>

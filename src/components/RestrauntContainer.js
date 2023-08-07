@@ -1,5 +1,4 @@
-import restList from "../utils/mockData";
-import { logo } from "../../logo.png";
+
 import { CDN_URL } from "../utils/constants";
 const RestrauntContainer = (props) => {
   const {
