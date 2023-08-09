@@ -45,4 +45,14 @@ console.log(heading); // react element - it is a js object
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(parent3); 
 //what if we have  h1 tag in index.html in that case what will it do==> it will replaced h1 tag and render root
+
+hook creating idea
+
+what you need to have if you want to create custom hook
+just understand the contract what it will take as input and what will it return as output
+useLocalStorage()
+useSessionStorage()
+
+add dynosaur game of google while user is offline
+ 
             
